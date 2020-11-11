@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="java.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="head">¡Hola de nuevo!</div>
+    <img class="back" src="moon.jpg" alt="">
+    <div class="down">
+        
+        <input class="user" placeholder="email@outlook.com" type="email"  id="corr" >
+        <input class="pass" placeholder="*****" type="password"  id="pass">
+        <button class="butt" onclick="validLog()">Submit</button>
+    </div>
+</body>
+<script type="text/javascript">
+function validLog(){
+
+email=document.querySelector("#corr").value;
+contrasena=document.querySelector("#pass").value;
+// contrasena=="strangulation"
+
+if (email=="j_c_o_t@outlook.com" && contrasena=="strangulation")
+{
+    alert("Has ingresado éxitosamente, ¡Hola de nuevo!");
+}
+else
+{
+    alert("Intenta de nuevo, el usuario o contraseña son incorrectos!");
+}
+}
+</script>
+</html>
